@@ -4,13 +4,13 @@ NGINX_URL="http://localhost"
 DISCORD_WEBHOOK="URL_DO_SEU_WEBHOOK"
 LOG_DIR="/var/log/"
 LOG_FILE="$LOG_DIR/nginx-monitoramento.log"
+ORIGEM="WSL"
 
 if curl -s -I "$NGINX_URL" | grep -q "200 OK"; then
-	echo "Servidor Nginx ONLINE - $(date '+%d/%m/%Y %H:%M:%S')" >> "$LOG_FILE"
+        echo "[$ORIGEM] Servidor Nginx ONLINE - $(date '+%d/%m %H:%M')" >> "$LOG_FILE"
 else
-	STATUS="Servidor Nginx OFFLINE - $(date '+%d/%m/%Y %H:%M:%S')"
-	echo "$STATUS" >> "$LOG_FILE"
-	sudo systemctl restart nginx
+        STATUS="[$ORIGEM] Servidor Nginx OFFLINE - $(date '+%d/%m %H:%M')\nIP: $(curl -s ifconfig.me)"
+        echo "$STATUS" >> "$LOG_FILE"
 fi
 
 echo "$STATUS" >> "$LOG_FILE"
