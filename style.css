@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #17161b;
+    --cor-secundaria: #cbcddb;
+    --cor-terciaria: #ce6c10;
+    --cor-hover: #111116;
+    
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%;
+    gap: 60px;
+}
+
+.home_apresentacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home_apresentacao_titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.home_apresentacao_titulo_destaque {
+    color: var(--cor-terciaria);
+}
+
+.home_apresentacao_p {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.botao-documentacao {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 30px 100px;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.documentacao-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.botao-documentacao {
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.lista-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.tecnologia-item {
+    background-color: var(--cor-hover);
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.tecnologia-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tecnologia-item i {
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho {
+    margin: 3% 7%;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    gap: 90px;
+}
+
+.cabecalho_texto {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.cabecalho_texto:hover {
+    color: var(--cor-terciaria);
+}
+
+.cabecalho_texto::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor-terciaria);
+    transition: width 0.3s ease;
+}
+
+.cabecalho_texto:hover::after {
+    width: 100%;
+}
+
+.rodape-container {
+    background-color: var(--cor-hover);
+    padding: 30px;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+.rodape_texto {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.125rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rodape_texto:hover {
+    color: var(--cor-terciaria);
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .lista-tecnologias {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rodape {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .home_apresentacao_titulo {
+        font-size: 1.75rem;
+    }
+    
+    .home_apresentacao_p {
+        font-size: 1rem;
+    }
+
+    .documentacao-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .botao {
+        width: 100%;
+        justify-content: center;
+    }
+}
