@@ -49,8 +49,34 @@ No painel esquerdo, clique em Subnets > Create subnet > selecione a VPC criada.
 > Repita o processo anterior alterando apenas o nome da subrede (ex. subnet-**privada**-01)
 
 ### Criar Route Table Pública
+No painel esquerdo, clique em Route Tables > clique em Create route table.
+
+![Criar Rota Internet Gateway](images/rt-name.PNG)
+
+Selecione a tabela criada, clique em Edit routes e crie uma nova rota com as informações a seguir:
+
+![Criar Rota Internet Gateway](images/rt-rota-ig.PNG)
+
+Na aba Subnet associations, clique em Edit subnet associations > selecione a(s) sub-rede(s) pública(s)
+
+### Criar Route Table Pública
+
+> Repita o processo anterior alterando apenas o nome da tabela de rota (ex. **Private**-Route-Table") e associando à(s) sub-rede(s) privada(s)
 
 ## Configuração do servidor
+
+### Criar um Security Group (Grupo de Segurança)
+No Console AWS, vá para EC2 > Security Groups > Create Security Group.
+
+![Nomear Security Group](images/sg-name.PNG)
+
+Agora adcione Regras de Entrada (Inbound Rules) para permitir tráfego HTTP e SSH (opcional).
+
+![Nomear Security Group](images/sg-http.PNG)
+![Nomear Security Group](images/sg-ssh.PNG)
+
+### Criar a Instância EC2
+No Console AWS, vá para EC2 > Instances > Launch Instances.
 
 
 ## Configuração do script
