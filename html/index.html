@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PB Compass</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="cabecalho">
+				<li>
+					<a class="cabecalho_texto" href="#sobre">Sobre o projeto</a>
+                		</li>
+                		<li>
+                    			<a class="cabecalho_texto" href="#tecnologias">Tecnologias</a>
+                		</li>
+                		<li>
+					<a class="cabecalho_texto" href="#documentacao">Documentação</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<section id="sobre" class="home_apresentacao">
+			<h1 class="home_apresentacao_titulo">
+                		Sobre o projeto
+			</h1>
+            		<p class="home_apresentacao_p">
+                O objetivo do projeto foi desenvolver e testar habilidades em <strong class="home_apresentacao_titulo_destaque">Linux, AWS e automação de processos</strong> através da configuração de um ambiente de <strong class="home_apresentacao_titulo_destaque">servidor web monitorado.</strong>
+            		</p>
+            		<p class="home_apresentacao_p">
+                O passo inicial do projeto foi a configuração do ambiente. Configurei uma VPC com 2 sub-redes públicas e 2 privadas. Na sub-rede pública criei uma instância EC2 com Sistema Operacional Ubuntu. Subi um servidor Nginx e desenvolvi um script que verifica a cada 1 minuto se o site está disponível, caso a aplicação não esteja funcionando, o script envia uma notificação via Discord.
+            		</p>
+		</section>
+        
+		<section id="tecnologias" class="home_apresentacao">
+			<h1 class="home_apresentacao_titulo">
+                		Tecnologias e ferramentas
+            		</h1>
+            
+            		<ul class="lista-tecnologias">                
+                		<li class="tecnologia-item">
+                    			<i class="fab fa-aws"></i>
+                    			<span>EC2</span>
+                		</li>
+                		<li class="tecnologia-item">
+                    			<i class="fas fa-network-wired"></i>
+                    			<span>VPC</span>
+                		</li>
+                		<li class="tecnologia-item">
+                    			<i class="fas fa-server"></i>
+                    			<span>NGINX</span>
+                		</li>
+                		<li class="tecnologia-item">
+                    			<i class="fas fa-terminal"></i>
+                    			<span>BASH</span>
+                		</li>
+                		<li class="tecnologia-item">
+                    			<i class="fab fa-discord"></i>
+                    			<span>DISCORD WEBHOOK</span>
+                		</li>
+            		</ul>
+        	</section>
+        	<section id="documentacao" class="home_apresentacao">
+            		<h1 class="home_apresentacao_titulo">
+                		Documentação
+            		</h1>
+            		<div class="documentacao-container">
+                		<p class="home_apresentacao_p documentacao-texto">
+                    			A documentação detalhada do projeto está disponível com todos os passos de implementação, configurações técnicas e códigos utilizados. Explore para entender melhor a arquitetura e o funcionamento do sistema.
+                		</p>
+                		<div class="botao-documentacao">
+                    			<a href="documentacao.html" class="botao">
+                        			<i class="fas fa-book"></i> Acessar
+                    			</a>
+                		</div>
+            		</div>
+        	</section>
+	</main>
+    
+	<footer class="rodape-container">
+        	<ul class="rodape">
+            		<li>
+                		<a class="rodape_texto" href="https://www.linkedin.com/in/debora-oliv-alves/" target="_blank">
+                    			<i class="fab fa-linkedin"></i> Linkedin
+               	 		</a>
+            		</li>
+            		<li>
+                		<a class="rodape_texto" href="https://github.com/debora-oliv" target="_blank">
+                    			<i class="fab fa-github"></i> Github
+                		</a>
+            		</li>
+            		<li>
+                		<a class="rodape_texto" href="https://www.instagram.com/alves.debster/" target="_blank">
+                    			<i class="fab fa-instagram"></i> Instagram
+                		</a>
+            		</li>
+        	</ul>
+	</footer>
+</body>
+</html>
