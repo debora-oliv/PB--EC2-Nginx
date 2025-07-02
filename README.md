@@ -72,11 +72,27 @@ No Console AWS, vá para EC2 > Security Groups > Create Security Group.
 
 Agora adcione Regras de Entrada (Inbound Rules) para permitir tráfego HTTP e SSH (opcional).
 
-![Nomear Security Group](images/sg-http.PNG)
-![Nomear Security Group](images/sg-ssh.PNG)
+![Regra de Entrada 1 - HTTP](images/sg-http.PNG)
+![Regra de Entrada 2 - SSH](images/sg-ssh.PNG)
 
 ### Criar a Instância EC2
 No Console AWS, vá para EC2 > Instances > Launch Instances.
 
+Crie as seguintes tags e preencha com as informações do seu projeto:
+
+![Tag 1 - Name](images/ec2-tags-names.PNG) 
+![Tag 2 - Project](images/ec2-tags-project.PNG) 
+![Tag 3 - CostCenter](images/ec2-tags-costcenter.PNG) 
+
+> Slecione uma imagem (AMI) Linux
+![AMI Ubuntu](images/ec2-ami.PNG)
+![AMI Versão Ubuntu](images/ec2-ami-version.PNG)
+
+![Tipo de Instância EC2](images/ec2-instance-type.PNG)
+
+![Key Pair](images/ec2-key-pair.PNG)
+> Caso não tenha uma key pair, crie e armazene em C:\Users\seu_usuário\.ssh
+
+![Security Group](images/ec2-security-group.PNG)
 
 ## Configuração do script
