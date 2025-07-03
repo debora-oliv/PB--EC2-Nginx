@@ -93,7 +93,11 @@ Slecione uma imagem (AMI) Linux e uma versão LTS
 ![Key Pair](images/ec2-key-pair.PNG)
 > Caso não tenha uma key pair, crie e armazene em C:\Users\seu_usuário\.ssh
 
-Em Network Settings selecione a sua VPC criada e altere para a sub-rede pública de sua preferência
+Em Network Settings, clique em edit no canto superior direito > selecione a sua VPC e altere para a sub-rede pública de sua preferência:
+
+![Network Settings VPC](images/ec2-vpc.PNG)
+
+![Network Settings Subnet](images/ec2-subnet.PNG)
 
 ![Auto Assign IP](images/ec2-auto-assign-public-ip.PNG)
 
