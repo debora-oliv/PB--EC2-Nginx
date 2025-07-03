@@ -93,7 +93,8 @@ Slecione uma imagem (AMI) Linux e uma versão LTS
 ![Key Pair](images/ec2-key-pair.PNG)
 > Caso não tenha uma key pair, crie e armazene em C:\Users\seu_usuário\.ssh
 
-Em Network Settings, clique em edit no canto superior direito > selecione a sua VPC e altere para a sub-rede pública de sua preferência:
+
+Em Network Settings, clique em edit no canto superior direito > selecione a sua VPC e altere para a sub-rede pública de sua preferência
 
 ![Network Settings VPC](images/ec2-vpc.PNG)
 
@@ -105,7 +106,7 @@ Em Network Settings, clique em edit no canto superior direito > selecione a sua 
 
 # Configuração do Servidor (User Data)
 
->Para prosseguir faça o download do arquivo [init_server.sh](init_server.sh)
+>Para prosseguir faça o download do arquivo [script/init.sh](init.sh)
 
 Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo especificado:
 ![User Data](images/ec2-user-data.PNG)
