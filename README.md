@@ -106,7 +106,7 @@ Em Network Settings, clique em edit no canto superior direito > selecione a sua 
 
 # Configuração do Servidor
 
->Para prosseguir faça o download do arquivo [scripts/init.sh](init.sh)
+>Para prosseguir faça o download do arquivo [init.shs](cripts/init.sh)
 
 Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo instalado anteriormente:
 ![User Data](images/ec2-user-data.PNG)
