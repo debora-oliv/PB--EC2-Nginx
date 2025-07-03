@@ -110,3 +110,5 @@ Em Network Settings, clique em edit no canto superior direito > selecione a sua 
 
 Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo instalado anteriormente:
 ![User Data](images/ec2-user-data.PNG)
+
+⚠️ **Nota:** Lembre de alterar a variável DISCORD_WEBHOOK="LINK_DO_SEU_WEEBHOOK"!
