@@ -7,8 +7,8 @@ Criar uma VPC com com 2 sub-redes públicas e 2 privadas, configurar uma instân
 
 # Índice
 - [Configuração do ambiente](#configuração-ambiente)
-- [Configuração do servidor](#configuração-servidor)
-- [Configuração do script](#configuração-script)
+- [Criação da Instância EC2](#criação-da-instância-EC2)
+- [Configuração do Servidor](#configuração-do-servidor)
 
 # Configuração do ambiente
 
@@ -94,7 +94,7 @@ Slecione uma imagem (AMI) Linux e uma versão LTS
 > Caso não tenha uma key pair, crie e armazene em C:\Users\seu_usuário\.ssh
 
 
-Em Network Settings, clique em edit no canto superior direito > selecione a sua VPC e altere para a sub-rede pública de sua preferência
+Em Network Settings, clique em edit no canto superior direito > selecione a sua VPC e altere para a sub-rede pública de sua preferência:
 
 ![Network Settings VPC](images/ec2-vpc.PNG)
 
@@ -104,9 +104,9 @@ Em Network Settings, clique em edit no canto superior direito > selecione a sua 
 
 ![Security Group](images/ec2-security-group.PNG)
 
-# Configuração do Servidor (User Data)
+# Configuração do Servidor
 
->Para prosseguir faça o download do arquivo [script/init.sh](init.sh)
+>Para prosseguir faça o download do arquivo [scripts/init.sh](init.sh)
 
-Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo especificado:
+Na seção "Advanced Details", localize o campo "User data" > Choose file > selecione o arquivo instalado anteriormente:
 ![User Data](images/ec2-user-data.PNG)
